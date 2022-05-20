@@ -81,8 +81,16 @@ npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --
 ```
 
 ## 代理合约
+
+# 本地测试
 ```
 npx hardhat test test/proxy.js
+```
+
+# 测试网测试
+```
+npx hardhat run scripts/deploy-proxy.js --network kovan 
+0x5949E450Ed96cf35528c9b762a86C454710aA69B
 ```
 
 
