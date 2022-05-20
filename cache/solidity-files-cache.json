@@ -19,7 +19,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -56,7 +57,8 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "storageLayout"
               ],
               "": [
                 "ast"
@@ -71,6 +73,415 @@
       ],
       "artifacts": [
         "console"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy1/Proxy.sol": {
+      "lastModificationDate": 1652889568108,
+      "contentHash": "09f2c67e21f8d3813d0318d3e9ab7fb0",
+      "sourceName": "contracts/proxy1/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy1/Biz1.sol": {
+      "lastModificationDate": 1652878277127,
+      "contentHash": "8626b8e312d22d34a3864ff33a7821c7",
+      "sourceName": "contracts/proxy1/Biz1.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz1"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy1/Biz2.sol": {
+      "lastModificationDate": 1652878318971,
+      "contentHash": "b7dabaefa6871f59af18b74b80727ddc",
+      "sourceName": "contracts/proxy1/Biz2.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz2"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/ProxyStore.sol": {
+      "lastModificationDate": 1652882343763,
+      "contentHash": "29dd3b4af5f427cb73be6ec9bf6b4688",
+      "sourceName": "contracts/proxy2/ProxyStore.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyStore"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/Proxy2.sol": {
+      "lastModificationDate": 1652890003628,
+      "contentHash": "4acc0480f3d01e2113e08f495631eb5e",
+      "sourceName": "contracts/proxy2/Proxy2.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol",
+        "./ProxyStore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Proxy2"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/Biz3Store.sol": {
+      "lastModificationDate": 1652887840194,
+      "contentHash": "fc1535a006d37a9efc90e77febb28190",
+      "sourceName": "contracts/proxy2/Biz3Store.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ProxyStore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz3Store"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/Biz4Store.sol": {
+      "lastModificationDate": 1652887840192,
+      "contentHash": "e786f0414f21174e942fa18532436092",
+      "sourceName": "contracts/proxy2/Biz4Store.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Biz3Store.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz4Store"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/Biz4.sol": {
+      "lastModificationDate": 1652887840201,
+      "contentHash": "bbaa0f46a2821084fc15f8009457f088",
+      "sourceName": "contracts/proxy2/Biz4.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Biz4Store.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz4"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy2/Biz3.sol": {
+      "lastModificationDate": 1652887840199,
+      "contentHash": "ed8a2c6464b77123213bd10e2bfbb8c0",
+      "sourceName": "contracts/proxy2/Biz3.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Biz3Store.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Biz3"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/ProxyDemo1.sol": {
+      "lastModificationDate": 1652970502310,
+      "contentHash": "7691be57f65f38251e9145d30665921f",
+      "sourceName": "contracts/proxy/ProxyDemo1.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyDemo1"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/ProxyDemo2.sol": {
+      "lastModificationDate": 1652971794067,
+      "contentHash": "5ee9494d73324e83fd4b6219fad5aa03",
+      "sourceName": "contracts/proxy/ProxyDemo2.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ProxyDemo2"
       ]
     }
   }

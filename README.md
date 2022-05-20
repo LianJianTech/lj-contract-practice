@@ -31,8 +31,9 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/deploy.js
+node scripts/deploy-greeter.js
 npx hardhat help
+npx hardhat console
 ```
 
 ## 功能
@@ -59,7 +60,7 @@ npx hardhat compile
 
 ## 部署合约
 ```
-npx hardhat run scripts/deploy.js --network kovan 
+npx hardhat run scripts/deploy-greeter.js --network kovan 
 hash值: 0xcdf7e163f56c2507914eb3284ea7d7132cfc857a44b2a2b73f4edc69d2fdafaf
 合约地址: 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
  ```
@@ -78,3 +79,10 @@ npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
 ```
 npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
 ```
+
+## 代理合约
+```
+npx hardhat test test/proxy.js
+```
+
+
