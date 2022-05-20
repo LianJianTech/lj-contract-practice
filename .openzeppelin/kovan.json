@@ -1,0 +1,38 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x4A39522E1B5e35CC249283534D367e65E92bA6f4",
+    "txHash": "0xd307c34c0388451d20381e625ae6c08dc5c48f4afe8474fe1c1787c5b024eb3e"
+  },
+  "proxies": [
+    {
+      "address": "0x5949E450Ed96cf35528c9b762a86C454710aA69B",
+      "txHash": "0x25f4f4024ee4c177d89dc0db900c4f14ecb22b533dc9addc6733098395a3d0e8",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "c4ae50b0ddee240494475c4bf3d4dc4dc7fc65b37262fef888a205319874e4f9": {
+      "address": "0x3E3c68a39A7412913270b1C9A75e2C1C829CfB85",
+      "txHash": "0xd1e6b7fc0ee9a9727983196493c528622a1258f2e0811b77c9b973241637a43e",
+      "layout": {
+        "storage": [
+          {
+            "label": "data",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "ProxyDemo1",
+            "src": "contracts/proxy/ProxyDemo1.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
