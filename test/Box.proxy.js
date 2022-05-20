@@ -7,12 +7,10 @@ let box;
 describe("Box", function () {
     beforeEach(async function () {
         Box = await ethers.getContractFactory("Box");
-        box = await Box.deploy();
-        await box.deployed();
+        box = await upgrades.deployProxy(Box, [32], {initializer: 'store'});
         console.log("Box contract address", box.address);
     });
     it("retrieve", async function () {
-        await box.store(32);
         let value = await box.retrieve();
         console.log("Box value", value);
         expect(value.toString()).to.equal("32");

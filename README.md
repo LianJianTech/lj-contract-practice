@@ -85,12 +85,25 @@ npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --
 # 本地测试
 ```
 npx hardhat test test/Box.js
+npx hardhat test test/Box.proxy.js 
 ```
 
 # 测试网测试
 ```
-npx hardhat run scripts/deploy-proxy.js --network kovan 
-0x5949E450Ed96cf35528c9b762a86C454710aA69B
+npx hardhat run scripts/deploy.box.proxy.js 
+0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+
+npx hardhat run scripts/deploy.box.proxy.js --network kovan 
+Box deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
+
+```
+
+# 控制台调用
+```
+npx hardhat console --network kovan 
+const Box = await ethers.getContractFactory("Box");
+const box = await Box.attach("0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1");
+(await box.retrieve()).toString();
 ```
 
 
