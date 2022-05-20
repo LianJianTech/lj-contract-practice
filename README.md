@@ -90,20 +90,17 @@ npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
 npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
 ```
 
-## 代理合约
+# 代理合约
 
-# 本地测试
+## 本地测试
 
 ```
 npx hardhat test test/Box.js
 npx hardhat test test/Box.proxy.js 
 npx hardhat test test/BoxV2.proxy.js 
-
-npx hardhat run scripts/deploy.box.proxy.js 
-0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 ```
 
-# 测试网测试
+## 测试网部署
 
 ```
 npx hardhat run scripts/deploy.box.proxy.js --network kovan 
@@ -111,10 +108,9 @@ Box deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
 
 npx hardhat run scripts/deploy.boxv2.proxy.js --network kovan 
 BoxV2 deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
-
 ```
 
-# 控制台调用
+## 控制台调用
 
 ```
 npx hardhat console --network kovan 
