@@ -90,7 +90,7 @@ npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
 npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
 ```
 
-# 代理合约
+# OpenZeppelin Upgrades升级合约
 
 ## 本地测试
 
