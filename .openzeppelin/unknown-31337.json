@@ -55,6 +55,28 @@
           }
         }
       }
+    },
+    "9bff0aacea3169ca6b75c942403c7fe58c1b1b189b721f42f6f2ed3833b55fb0": {
+      "address": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "txHash": "0x81fa1d878ba615732b0b52d6c68637923011170137b175f90a95c7cd5dc1ed72",
+      "layout": {
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "BoxV2",
+            "src": "contracts/proxy/BoxV2.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
     }
   }
 }

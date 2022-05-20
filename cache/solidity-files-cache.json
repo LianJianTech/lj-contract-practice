@@ -182,6 +182,42 @@
       "artifacts": [
         "ProxyDemo2"
       ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/BoxV2.sol": {
+      "lastModificationDate": 1653055581394,
+      "contentHash": "e0b7dec6323d3cd72f51535f403ad982",
+      "sourceName": "contracts/proxy/BoxV2.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "BoxV2"
+      ]
     }
   }
 }

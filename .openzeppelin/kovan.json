@@ -60,6 +60,28 @@
           }
         }
       }
+    },
+    "9bff0aacea3169ca6b75c942403c7fe58c1b1b189b721f42f6f2ed3833b55fb0": {
+      "address": "0x74cfdD567FB1518d757eFB5027b1938cDAc03A24",
+      "txHash": "0x3eda147cfdb043f9ae002872b27f3bdf641cffb412cb1c3005bfe2f90dd5f621",
+      "layout": {
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "BoxV2",
+            "src": "contracts/proxy/BoxV2.sol:5"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
     }
   }
 }

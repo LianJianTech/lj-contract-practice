@@ -1,6 +1,7 @@
 # flash meta contract practice(hardhat)
 
 ## 准备环境
+
 - 安装node
 - 安装npm
 - 安装solc
@@ -9,6 +10,7 @@
 - etherscan api
 
 ## 创建项目
+
 ```
 (Create a basic sample project)
 
@@ -25,6 +27,7 @@ npm install --save-dev @nomiclabs/hardhat-etherscan
 ```
 
 ## hardhat命令
+
 ```shell
 npx hardhat accounts
 npx hardhat compile
@@ -37,6 +40,7 @@ npx hardhat console
 ```
 
 ## 功能
+
 ```
 编译
 测试
@@ -49,33 +53,39 @@ npx hardhat console
 ```
 
 ## 查看地址拥有的ETH数量
+
 ```
 npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB
 ```
 
 ## 编译合约
+
 ```
 npx hardhat compile
 ```
 
 ## 部署合约
+
 ```
 npx hardhat run scripts/deploy-greeter.js --network kovan 
 hash值: 0xcdf7e163f56c2507914eb3284ea7d7132cfc857a44b2a2b73f4edc69d2fdafaf
 合约地址: 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
- ```
+```
 
 ## 验证合约
+
 ```
 npx hardhat verify --network kovan 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 "HelloWorld"
 ```
 
 ## 部署合约-读操作
+
 ```
 npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 
 ```
 
 ## 部署合约-写操作
+
 ```
 npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
 ```
@@ -83,27 +93,42 @@ npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --
 ## 代理合约
 
 # 本地测试
+
 ```
 npx hardhat test test/Box.js
 npx hardhat test test/Box.proxy.js 
+npx hardhat test test/BoxV2.proxy.js 
+
+npx hardhat run scripts/deploy.box.proxy.js 
+0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 ```
 
 # 测试网测试
-```
-npx hardhat run scripts/deploy.box.proxy.js 
-0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
 
+```
 npx hardhat run scripts/deploy.box.proxy.js --network kovan 
 Box deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
+
+npx hardhat run scripts/deploy.boxv2.proxy.js --network kovan 
+BoxV2 deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
 
 ```
 
 # 控制台调用
+
 ```
 npx hardhat console --network kovan 
 const Box = await ethers.getContractFactory("Box");
 const box = await Box.attach("0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1");
-(await box.retrieve()).toString();
+let value = await box.retrieve();
+value.toString();
+
+npx hardhat console --network kovan 
+const BoxV2 = await ethers.getContractFactory("BoxV2");
+const boxV2 = await BoxV2.attach("0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1");
+let value = await boxV2.retrieve();
+value.toString();
+await boxV2.storeV2();
+value = await boxV2.retrieve();
+value.toString();
 ```
-
-
