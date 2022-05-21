@@ -5,8 +5,9 @@ coverage.json
 typechain
 
 #Hardhat files
-cache
-artifacts
+cache/
+artifacts/
 *.xml
 .idea
 .openzeppelin
+node_modules/
