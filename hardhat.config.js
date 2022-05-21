@@ -5,7 +5,8 @@ require("@nomiclabs/hardhat-etherscan");
 require('@openzeppelin/hardhat-upgrades');
 
 
-const defaultNetwork = 'hardhat';
+// hardhat kovan rinkeby
+const defaultNetwork = 'rinkeby';
 
 // npx hardhat accounts
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -75,12 +76,16 @@ module.exports = {
     },
     defaultNetwork: defaultNetwork,
     /*etherscan: {
-      apiKey: process.env.ETHERSCAN_API_KEY
+      apiKey: process.env.etherscan_api_key
     },*/
     networks: {
         kovan: {
-            url: `https://eth-kovan.alchemyapi.io/v2/` + process.env.ALCHEMY_API_KEY,
-            accounts: [`0x` + process.env.KOVAN_PRIVATE_KEY]
+            url: `https://eth-kovan.alchemyapi.io/v2/` + process.env.kovan_alchemy_api_key,
+            accounts: [`0x` + process.env.private_key]
+        },
+        rinkeby: {
+            url: `https://eth-rinkeby.alchemyapi.io/v2/` + process.env.rinkeby_alchemy_api_key,
+            accounts: [`0x` + process.env.private_key]
         }
     },
 };
