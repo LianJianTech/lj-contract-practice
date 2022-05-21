@@ -6,7 +6,7 @@ require('@openzeppelin/hardhat-upgrades');
 
 
 // hardhat kovan rinkeby
-const defaultNetwork = 'rinkeby';
+const defaultNetwork = 'hardhat';
 
 // npx hardhat accounts
 task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
@@ -30,7 +30,7 @@ task("balance", "prints an account's balance")
     });
 
 
-const greeter_json = require('./artifacts/contracts/Greeter.sol/Greeter.json');
+const greeter_json = require('./artifacts/contracts/greeter/Greeter.sol/Greeter.json');
 const greeter_abi = greeter_json.abi;
 
 // npx hardhat greet --contract 0x18EeafE5d8AF4279274de1d4aA4BBE98bD15a0bA

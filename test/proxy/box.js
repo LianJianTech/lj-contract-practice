@@ -8,7 +8,6 @@ describe("Box", function () {
     beforeEach(async function () {
         Box = await ethers.getContractFactory("Box");
         box = await Box.deploy();
-        await box.deployed();
         console.log("Box contract address", box.address);
     });
     it("retrieve", async function () {

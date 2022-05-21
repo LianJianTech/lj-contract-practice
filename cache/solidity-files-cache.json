@@ -1,44 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/Greeter.sol": {
-      "lastModificationDate": 1652664458396,
-      "contentHash": "54c28c84e5277b35b8c8329ce9755dae",
-      "sourceName": "contracts/Greeter.sol",
-      "solcConfig": {
-        "version": "0.8.0",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "hardhat/console.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Greeter"
-      ]
-    },
     "/Users/vincecfl/lianjian/contract/lj-contract-practice/node_modules/hardhat/console.sol": {
       "lastModificationDate": 1652664440973,
       "contentHash": "cc4777addd464ea56fa35b1c45df0591",
@@ -111,78 +73,6 @@
         "Box"
       ]
     },
-    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/ProxyDemo1.sol": {
-      "lastModificationDate": 1652970502310,
-      "contentHash": "7691be57f65f38251e9145d30665921f",
-      "sourceName": "contracts/proxy/ProxyDemo1.sol",
-      "solcConfig": {
-        "version": "0.8.0",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ProxyDemo1"
-      ]
-    },
-    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/ProxyDemo2.sol": {
-      "lastModificationDate": 1652971794067,
-      "contentHash": "5ee9494d73324e83fd4b6219fad5aa03",
-      "sourceName": "contracts/proxy/ProxyDemo2.sol",
-      "solcConfig": {
-        "version": "0.8.0",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata",
-                "storageLayout"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ProxyDemo2"
-      ]
-    },
     "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/proxy/BoxV2.sol": {
       "lastModificationDate": 1653055581394,
       "contentHash": "e0b7dec6323d3cd72f51535f403ad982",
@@ -217,6 +107,44 @@
       ],
       "artifacts": [
         "BoxV2"
+      ]
+    },
+    "/Users/vincecfl/lianjian/contract/lj-contract-practice/contracts/greeter/Greeter.sol": {
+      "lastModificationDate": 1653123981070,
+      "contentHash": "54c28c84e5277b35b8c8329ce9755dae",
+      "sourceName": "contracts/greeter/Greeter.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Greeter"
       ]
     }
   }

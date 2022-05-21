@@ -34,7 +34,7 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/deploy-greeter.js
+node scripts/deploy.greeter.js
 npx hardhat help
 npx hardhat console
 ```
@@ -67,7 +67,7 @@ npx hardhat compile
 ## 部署合约
 
 ```
-npx hardhat run scripts/deploy-greeter.js --network kovan 
+npx hardhat run scripts/deploy.greeter.js --network kovan 
 hash值: 0xcdf7e163f56c2507914eb3284ea7d7132cfc857a44b2a2b73f4edc69d2fdafaf
 合约地址: 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
 ```
@@ -95,9 +95,9 @@ npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --
 ## 本地测试
 
 ```
-npx hardhat test test/Box.js
-npx hardhat test test/Box.proxy.js 
-npx hardhat test test/BoxV2.proxy.js 
+npx hardhat test test/box.js
+npx hardhat test test/box.proxy.js 
+npx hardhat test test/box.v2.proxy.js 
 ```
 
 ## 测试网部署
@@ -106,7 +106,7 @@ npx hardhat test test/BoxV2.proxy.js
 npx hardhat run scripts/deploy.box.proxy.js --network kovan 
 Box deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
 
-npx hardhat run scripts/deploy.boxv2.proxy.js --network kovan 
+npx hardhat run scripts/deploy.box.v2.proxy.js --network kovan 
 BoxV2 deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
 ```
 
