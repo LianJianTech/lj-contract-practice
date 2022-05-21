@@ -10,3 +10,4 @@ artifacts
 *.xml
 .idea
 .openzeppelin
+node_modules
