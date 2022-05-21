@@ -3,8 +3,7 @@ const {upgrades} = require("hardhat");
 
 async function main() {
     const Box = await hre.ethers.getContractFactory("Box");
-    const box = await upgrades.deployProxy(Box, [32],
-        {initializer: 'store'});
+    const box = await upgrades.deployProxy(Box, [32], {initializer: 'store'});
     console.log("Box deployed to:", box.address);
 }
 

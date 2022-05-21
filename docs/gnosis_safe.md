@@ -1,19 +1,25 @@
-
-# 升级合约(OpenZeppelin Upgrades)
-
-## 本地测试
+#Gnosis Safe多签
+```
+https://gnosis-safe.io/app/rin:0xFb265434E57eE552a11b0C9eC445b1020b71859F/home
+rin:0xFb265434E57eE552a11b0C9eC445b1020b71859F
+rin:0x833dE082e21E1250fc112F2654E2441052ca28fB
+```
 
 ```
-npx hardhat test test/proxy/box.js
-npx hardhat test test/proxy/box.proxy.js 
-npx hardhat test test/proxy/box.v2.proxy.js 
+npx hardhat run scripts/gnosis_safe/gnosis_safe.js --network rinkeby 
+transfer ownership of proxyAdmin...
+✔ 0x0d1cf4A46347Df458fF79241CC539022902Ead43 (transparent) proxy ownership transfered through admin proxy
+transfer ownership of proxyAdmin to: 0xFb265434E57eE552a11b0C9eC445b1020b71859F
 ```
+
+
+
 
 ## 测试网部署
 
 ```
 npx hardhat run scripts/proxy/deploy.box.proxy.js --network rinkeby 
-Box deployed to: 0xfC59fD0BF602b297c2B2Bb8532e050540F9d0e07
+Box deployed to: 0x0d1cf4A46347Df458fF79241CC539022902Ead43
 
 npx hardhat run scripts/proxy/deploy.box.v2.proxy.js --network rinkeby 
 BoxV2 deployed to: 0xfC59fD0BF602b297c2B2Bb8532e050540F9d0e07
@@ -24,7 +30,7 @@ BoxV2 deployed to: 0xfC59fD0BF602b297c2B2Bb8532e050540F9d0e07
 ```
 npx hardhat console --network rinkeby  
 const Box = await ethers.getContractFactory("Box");
-const box = await Box.attach("0xfC59fD0BF602b297c2B2Bb8532e050540F9d0e07");
+const box = await Box.attach("0xFb265434E57eE552a11b0C9eC445b1020b71859F");
 let value = await box.retrieve();
 value.toString();
 await box.store(60);
