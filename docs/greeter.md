@@ -29,7 +29,7 @@ npx hardhat run scripts/greeter/deploy.greeter.js --network rinkeby
 ## 验证合约
 ```
 npx hardhat verify --network rinkeby 0xa61c20914237B98722C1d1c840b87c367D7753A1 "HelloWorld"
-不成功:
+执行不成功? 报错信息:
 Error in plugin @nomiclabs/hardhat-etherscan: Failed to send contract verification request
 ```
 

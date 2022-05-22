@@ -3,12 +3,10 @@
 
 ## 内容
 ```
-创建可升级合约Box
-本地测试合约Box
-测试网部署和调用合约Box
-创建新的实现合约BoxV2
-本地测试合约BoxV2
-测试网部署和调用合约BoxV2
+测试网部署合约Box
+测试网调用合约Box
+测试网部署合约BoxV2
+测试网调用合约BoxV2
 ```
 
 ## 原理
@@ -17,7 +15,6 @@
 Box和BoxV2
 0x1a3F154e4C2b8030dEEB63Dd5f9CD410C6EecC7E
 0xa3a68bF627ea3E732C75ba55CB075CF142750652
-
 
 ProxyAdmin合约:
 0x27BEb39785094Dc783D58dA3c4A83AE69b39b28e
