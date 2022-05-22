@@ -20,6 +20,13 @@ transfer ownership of proxyAdmin to: 0xFb265434E57eE552a11b0C9eC445b1020b71859F
 ```
 npx hardhat run scripts/proxy/deploy.box.proxy.js --network rinkeby 
 Box deployed to: 0x0d1cf4A46347Df458fF79241CC539022902Ead43
+0xEEc69FDB9bf1114632D2FAB521FB445c46ab2bc0
+
+
+The proxy contract verification completed with the message:
+
+The proxy's (0x0d1cf4a46347df458ff79241cc539022902ead43) 
+implementation contract is found at: 0x14753c6cb0d095b1794dae792bf6b6ce825ffa6f
 
 npx hardhat run scripts/proxy/deploy.box.v2.proxy.js --network rinkeby 
 BoxV2 deployed to: 0xfC59fD0BF602b297c2B2Bb8532e050540F9d0e07

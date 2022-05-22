@@ -29,6 +29,7 @@ task("balance", "prints an account's balance")
       });
     });
 
+/*
 
 const greeter_json = require('./artifacts/contracts/greeter/Greeter.sol/Greeter.json');
 const greeter_abi = greeter_json.abi;
@@ -61,6 +62,7 @@ task("setGreeting", "")
       let currentValue = await contract.greet();
       console.log("setGreeting currentValue:%s", currentValue);
     });
+*/
 
 
 /**
@@ -75,9 +77,9 @@ module.exports = {
     allowUnlimitedContractSize: false,
   },
   defaultNetwork: defaultNetwork,
-  /*etherscan: {
+  etherscan: {
     apiKey: process.env.etherscan_api_key
-  },*/
+  },
   networks: {
     kovan: {
       url: `https://eth-kovan.alchemyapi.io/v2/` + process.env.kovan_alchemy_api_key,
