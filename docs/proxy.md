@@ -13,8 +13,8 @@ npx hardhat test test/proxy/box.v2.proxy.js
 
 ```
 npx hardhat run scripts/proxy/deploy.box.proxy.js --network rinkeby 
-Box deployed to: 0xbE125c9f8a31C7F8ee82705Fe006B7eDF15F0191
-proxAdmin: 0xA37E0874C7B959A63196AB5A158Ec8f3F5E6a8F9
+proxy: 0xbE125c9f8a31C7F8ee82705Fe006B7eDF15F0191
+prox admin: 0xA37E0874C7B959A63196AB5A158Ec8f3F5E6a8F9
 impl: 0x873CB445b35E6B21b4284de72e5ACE3cA41DC061
 
 
@@ -29,7 +29,8 @@ value.toString();
 
 
 npx hardhat run scripts/proxy/deploy.box.v2.proxy.js --network rinkeby 
-BoxV2 deployed to: 0xbE125c9f8a31C7F8ee82705Fe006B7eDF15F0191
+proxy: 0xbE125c9f8a31C7F8ee82705Fe006B7eDF15F0191
+proxy admin: 0xA37E0874C7B959A63196AB5A158Ec8f3F5E6a8F9
 impl: 0xafa3e861a2235aa0f98f4dbbd317b1620df53c3c
 
 
