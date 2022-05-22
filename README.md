@@ -1,4 +1,4 @@
-# Hardhat智能合约开发实践: 基本使用、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
+# Hardhat智能合约开发实践
 
 ## 准备环境
 
@@ -39,7 +39,7 @@ npx hardhat help
 npx hardhat console
 ```
 
-## 案例实践
+## 开发实践
 
 - [基本使用Greeter](./docs/greeter.md)
 - [OpenZeppelin Upgrades代理升级合约](./docs/proxy.md)
