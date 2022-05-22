@@ -1,4 +1,4 @@
-# Gnosis Safe多签
+# Gnosis Safe多重签名
 
 ## 内容
 ```

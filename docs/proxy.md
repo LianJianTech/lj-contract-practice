@@ -1,4 +1,4 @@
-# 代理升级合约-OpenZeppelin Upgrades
+# OpenZeppelin Upgrades代理升级合约
 
 ## 内容
 ```

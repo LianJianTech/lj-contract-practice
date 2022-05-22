@@ -1,4 +1,4 @@
-# flash meta contract practice(hardhat)
+# Hardhat智能合约开发实践: 基本使用、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
 
 ## 准备环境
 
@@ -42,5 +42,5 @@ npx hardhat console
 ## 案例实践
 
 - [基本使用Greeter](./docs/greeter.md)
-- [代理升级合约-OpenZeppelin Upgrades](./docs/proxy.md)
-- [Gnosis Safe多签](/docs/gnosis_safe.md)
+- [OpenZeppelin Upgrades代理升级合约](./docs/proxy.md)
+- [Gnosis Safe多重签名](/docs/gnosis_safe.md)
