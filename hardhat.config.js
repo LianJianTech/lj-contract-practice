@@ -17,7 +17,7 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB
+// npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB --network rinkeby
 task("balance", "prints an account's balance")
     .addParam("account", "the account's address")
     .setAction(async taskArgs => {
@@ -28,42 +28,6 @@ task("balance", "prints an account's balance")
         console.log("Balance: " + etherString);
       });
     });
-
-/*
-
-const greeter_json = require('./artifacts/contracts/greeter/Greeter.sol/Greeter.json');
-const greeter_abi = greeter_json.abi;
-
-// npx hardhat greet --contract 0x18EeafE5d8AF4279274de1d4aA4BBE98bD15a0bA
-task("greet", "")
-    .addParam("contract", "")
-    .setAction(async taskArgs => {
-      let contractAddress = taskArgs.contract;
-      let provider = ethers.getDefaultProvider(defaultNetwork);
-      let contract = new ethers.Contract(contractAddress, greeter_abi, provider);
-      let currentValue = await contract.greet();
-      console.log("greet currentValue:%s", currentValue);
-    });
-
-
-// npx hardhat setGreeting --contract 0x18EeafE5d8AF4279274de1d4aA4BBE98bD15a0bA --value "您好，世界"
-task("setGreeting", "")
-    .addParam("contract", "")
-    .addParam("value", "")
-    .setAction(async (taskArgs) => {
-      let contractAddress = taskArgs.contract;
-      let privateKey = process.env.KOVAN_PRIVATE_KEY;
-      let provider = ethers.getDefaultProvider(defaultNetwork);
-      let contract = new ethers.Contract(contractAddress, greeter_abi, provider);
-      let wallet = new ethers.Wallet(privateKey, provider);
-      let contractWithSigner = contract.connect(wallet);
-      let tx = await contractWithSigner.setGreeting(taskArgs.value);
-      console.log("setGreeting hash:%s", tx.hash);
-      let currentValue = await contract.greet();
-      console.log("setGreeting currentValue:%s", currentValue);
-    });
-*/
-
 
 /**
  * @type import('hardhat/config').HardhatUserConfig

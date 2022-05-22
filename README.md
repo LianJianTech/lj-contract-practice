@@ -55,7 +55,7 @@ npx hardhat console
 ## 查看地址拥有的ETH数量
 
 ```
-npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB
+npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB --network rinkeby 
 ```
 
 ## 编译合约
@@ -90,41 +90,3 @@ npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
 npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
 ```
 
-# 升级合约(OpenZeppelin Upgrades)
-
-## 本地测试
-
-```
-npx hardhat test test/box.js
-npx hardhat test test/box.proxy.js 
-npx hardhat test test/box.v2.proxy.js 
-```
-
-## 测试网部署
-
-```
-npx hardhat run scripts/deploy.box.proxy.js --network kovan 
-Box deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
-
-npx hardhat run scripts/deploy.box.v2.proxy.js --network kovan 
-BoxV2 deployed to: 0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1
-```
-
-## 控制台调用
-
-```
-npx hardhat console --network kovan 
-const Box = await ethers.getContractFactory("Box");
-const box = await Box.attach("0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1");
-let value = await box.retrieve();
-value.toString();
-
-npx hardhat console --network kovan 
-const BoxV2 = await ethers.getContractFactory("BoxV2");
-const boxV2 = await BoxV2.attach("0xC95c9Edf78c2687791B69C6241713Ad40CDAFDe1");
-let value = await boxV2.retrieve();
-value.toString();
-await boxV2.storeV2();
-value = await boxV2.retrieve();
-value.toString();
-```
