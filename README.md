@@ -34,9 +34,9 @@ npx hardhat compile
 npx hardhat clean
 npx hardhat test
 npx hardhat node
-node scripts/deploy.greeter.js
 npx hardhat help
 npx hardhat console
+npx hardhat run
 ```
 
 ## 开发实践
