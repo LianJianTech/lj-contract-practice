@@ -1,17 +1,44 @@
 # Greeter
 
+## 步骤
+```
+编译
+测试
+部署
+验证
+调用
+```
+
+
+## 编译合约
+```
+npx hardhat compile
+```
+
 ## 本地测试
+```
+npx hardhat test test/greeter/greeter.js
+```
 
-
-## 测试网部署和调试
-
+## 部署合约
 ```
 npx hardhat run scripts/greeter/deploy.greeter.js --network rinkeby 
-Greeter deployed to: 0x6F4791787539E19697bed8337A9CCEA9Fe541033
+合约地址: 0xa61c20914237B98722C1d1c840b87c367D7753A1
+```
 
+## 验证合约
+```
+npx hardhat verify --network rinkeby 0xa61c20914237B98722C1d1c840b87c367D7753A1 "HelloWorld"
+不成功:
+Error in plugin @nomiclabs/hardhat-etherscan: Failed to send contract verification request
+```
+
+
+## 调用
+```
 npx hardhat console --network rinkeby 
 const Greeter = await ethers.getContractFactory("Greeter");
-const greeter = await Greeter.attach("0x6F4791787539E19697bed8337A9CCEA9Fe541033");
+const greeter = await Greeter.attach("0xa61c20914237B98722C1d1c840b87c367D7753A1");
 let value = await greeter.greet();
 value.toString();
 await greeter.setGreeting("Flash Meta");

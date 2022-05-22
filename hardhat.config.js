@@ -45,10 +45,6 @@ module.exports = {
     apiKey: process.env.etherscan_api_key
   },
   networks: {
-    kovan: {
-      url: `https://eth-kovan.alchemyapi.io/v2/` + process.env.kovan_alchemy_api_key,
-      accounts: [`0x` + process.env.private_key]
-    },
     rinkeby: {
       url: `https://eth-rinkeby.alchemyapi.io/v2/` + process.env.rinkeby_alchemy_api_key,
       accounts: [`0x` + process.env.private_key]
