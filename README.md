@@ -39,54 +39,8 @@ npx hardhat help
 npx hardhat console
 ```
 
-## 功能
+## 案例实践
 
-```
-编译
-测试
-部署
-验证
-调用-读操作
-调用-写操作
-升级合约
-多重签名
-```
-
-## 查看地址拥有的ETH数量
-
-```
-npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB --network rinkeby 
-```
-
-## 编译合约
-
-```
-npx hardhat compile
-```
-
-## 部署合约
-
-```
-npx hardhat run scripts/deploy.greeter.js --network kovan 
-hash值: 0xcdf7e163f56c2507914eb3284ea7d7132cfc857a44b2a2b73f4edc69d2fdafaf
-合约地址: 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871
-```
-
-## 验证合约
-
-```
-npx hardhat verify --network kovan 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 "HelloWorld"
-```
-
-## 部署合约-读操作
-
-```
-npx hardhat greet --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 
-```
-
-## 部署合约-写操作
-
-```
-npx hardhat setGreeting --contract 0x7c269bEe4773B4E6B8F408ABdd5c01788C76C871 --value "LianJian Tech"
-```
-
+- [基本使用Greeter](./docs/greeter.md)
+- [代理升级合约-OpenZeppelin Upgrades](./docs/proxy.md)
+- [Gnosis Safe多签](/docs/gnosis_safe.md)
