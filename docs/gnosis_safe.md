@@ -68,8 +68,6 @@ npx hardhat run scripts/gnosis_safe/transfer_ownership.js --network rinkeby
 ✔ 0x9cd6893b65768B563506eE997591a68169692946 (transparent) proxy ownership transfered through admin proxy
 transfer ownership of proxyAdmin to: 0xFb265434E57eE552a11b0C9eC445b1020b71859F
 
-
-
 部署合约BoxV2:
 npx hardhat run scripts/gnosis_safe/deploy.box.v2.proxy.js --network rinkeby 
 impl: 0x58Aa3058DA717fAA895479DB0CC428DDA49d4685
@@ -79,7 +77,6 @@ proxy: 0x9cd6893b65768B563506eE997591a68169692946
 Proxy的Impl地址变更为BoxV2地址:
 gnosis-safe上操作(OpenZeppelin的网页无法打开?)
 https://gnosis-safe.io/app/rin:0xFb265434E57eE552a11b0C9eC445b1020b71859F/home
-
 
 调用合约BoxV2:
 npx hardhat console --network rinkeby 
