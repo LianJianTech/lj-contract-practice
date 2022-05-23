@@ -3,7 +3,7 @@ const {upgrades} = require("hardhat");
 
 async function main() {
     console.log("Upgrading Box to BoxV2...");
-    const proxyAddress = "0x40a5e3a689bd3A2bb3284020c33C361970dB529A";
+    const proxyAddress = "0x2FFFF8E483ADFd6A081ee1358d2703097Af6Ca27";
     const BoxV2 = await hre.ethers.getContractFactory("BoxV2");
 
     //upgradeProxy

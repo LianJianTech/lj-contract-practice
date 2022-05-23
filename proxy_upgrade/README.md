@@ -74,7 +74,7 @@ await boxV2.storeV2();
 value = await boxV2.retrieve();
 value.toString();
 
-调用合约Box(旧合约还是可以调用?):
+调用合约Box(旧合约还可以调用?):
 npx hardhat console --network rinkeby  
 const Box = await ethers.getContractFactory("Box");
 const box = await Box.attach("0xFD4Bf737b5cf5F88A9fc59D78f2adD029c50AB2C");
