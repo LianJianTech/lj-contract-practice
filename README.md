@@ -41,6 +41,6 @@ npx hardhat run
 
 ## 开发实践
 
-- [基本使用Greeter](./docs/greeter.md)
-- [OpenZeppelin Upgrades代理升级合约](./docs/proxy.md)
-- [Gnosis Safe多重签名](/docs/gnosis_safe.md)
+- [基本使用Greeter](./greeter/README.md)
+- [OpenZeppelin Upgrades代理升级合约](./proxy_upgrade/README.md)
+- [Gnosis Safe多重签名](./gnosis_safe/README.md)
