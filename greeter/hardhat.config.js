@@ -2,7 +2,6 @@ require("@nomiclabs/hardhat-waffle");
 require("hardhat-gas-reporter");
 require('dotenv').config();
 require("@nomiclabs/hardhat-etherscan");
-require('@openzeppelin/hardhat-upgrades');
 
 
 // hardhat kovan rinkeby
