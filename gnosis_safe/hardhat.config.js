@@ -17,18 +17,6 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   }
 });
 
-// npx hardhat balance --account 0x833dE082e21E1250fc112F2654E2441052ca28fB --network rinkeby
-task("balance", "prints an account's balance")
-    .addParam("account", "the account's address")
-    .setAction(async taskArgs => {
-      await ethers.provider.getBalance(taskArgs.account).then((balance) => {
-        // 余额是 BigNumber (in wei); 格式化为 ether 字符串
-        let etherString = ethers.utils.formatEther(balance);
-
-        console.log("Balance: " + etherString);
-      });
-    });
-
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
