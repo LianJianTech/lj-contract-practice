@@ -1,4 +1,5 @@
-# 以太坊智能合约开发框架Hardhat实践: 基本使用、ERC20、ERC721、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
+# 以太坊智能合约开发框架Hardhat实践
+## 基本使用、ERC20、ERC721、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
 
 ## 准备
 
