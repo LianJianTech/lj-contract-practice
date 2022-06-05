@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-// 报错控制
+// Error处理
 contract MyError {
     function testRequire(uint x) external pure {
         require(x <= 10, "requrire, x > 10");

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-// if else
+// 条件判断
 contract IfElse {
     function func1(uint x) external pure returns (uint) {
         if (x < 10) {

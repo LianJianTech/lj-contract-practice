@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+// 只读函数(View Pure)
 contract ViewAndPure {
     uint public num = 1;
 

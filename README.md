@@ -1,9 +1,13 @@
-# 以太坊智能合约开发框架Hardhat实践
+# 以太坊智能合约开发最佳实践
 ```
-基本使用、ERC20、ERC721、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
+基本使用、进阶使用、ERC20、ERC721、Hardhat、OpenZeppelin Upgrades代理升级合约、Gnosis Safe多重签名...
 ```
 
-## 准备
+## 在线环境
+- MetaMask
+- Remix(https://remix.ethereum.org/)
+  
+## 本地环境准备
 
 - 安装node
 - 安装npm
@@ -12,7 +16,7 @@
 - alchemy api
 - etherscan api
 
-## 创建项目
+## Hardhat创建项目
 
 ```
 (Create a basic sample project)
@@ -29,7 +33,7 @@ npm install --save-dev hardhat-gas-reporter
 npm install --save-dev @nomiclabs/hardhat-etherscan
 ```
 
-## hardhat命令
+## Hardhat命令
 
 ```shell
 npx hardhat accounts
@@ -42,8 +46,9 @@ npx hardhat console
 npx hardhat run
 ```
 
-## 开发实践
-
-- [基本使用Greeter](./greeter/README.md)
-- [OpenZeppelin Upgrades代理升级合约](./proxy_upgrade/README.md)
-- [Gnosis Safe多重签名](./gnosis_safe/README.md)
+## 开发最佳实践
+- [基本使用](./example_base/README.md)
+- [进阶使用](./example_advance/README.md)
+- [Hardhat-Greeter](./greeter/README.md)
+- [Hardhat-OpenZeppelin Upgrades代理升级合约](./proxy_upgrade/README.md)
+- [Hardhat-Gnosis Safe多重签名](./gnosis_safe/README.md)

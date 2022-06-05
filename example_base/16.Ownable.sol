@@ -7,7 +7,7 @@ pragma solidity ^0.8.13;
 // function
 // error handling
 
-// owner
+// Ownable
 contract Ownable {
     address public owner;
 
