@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
+// 数据类型
 contract DataType {
     bool public boo = true;
     uint8 public u8 = 1;
