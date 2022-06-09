@@ -47,8 +47,8 @@ npx hardhat run
 ```
 
 ## 开发最佳实践
-- [基本使用](./example_base/README.md)
-- [进阶使用](./example_advance/README.md)
+- [基本使用](./example_01_base/README.md)
+- [进阶使用](./example_02_advance/README.md)
 - [Hardhat-Greeter](./greeter/README.md)
 - [Hardhat-OpenZeppelin Upgrades代理升级合约](./proxy_upgrade/README.md)
 - [Hardhat-Gnosis Safe多重签名](./gnosis_safe/README.md)
