@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-// 多线继承
+// 多重继承
 contract A {
     function func1() public pure virtual returns (string memory) {
         return "A1";
