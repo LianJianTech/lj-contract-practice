@@ -18,3 +18,6 @@
 - [16.低级调用Call*](16.Call.sol)
 - [17.委托调用DelegateCall](17.DelegateCall.sol)
 - [18.工厂合约](18.FactoryContract.sol)
+- [19.库合约](19.Library.sol)
+- [20.hash运算](20.HashFunction.sol)
+- [21.验证签名*](21.VerifySign.sol)
