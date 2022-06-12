@@ -41,7 +41,7 @@
 - [20.映射](20.Mapping.sol)
 
 - [21.迭代映射](21.IterableMapping.sol)
+  
+- [22.枚举](22.Enum.sol)
 
-- [22.结构体](22.Struct.sol)
-
-- [23.枚举](23.Enum.sol)
+- [23.结构体](23.Struct.sol)

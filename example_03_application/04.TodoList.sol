@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-// 待办事项列表
+// 待办事项
 contract TodoList {
     struct Todo {
         string text;
