@@ -38,7 +38,7 @@
 
 - [19.库合约](19.Library.sol)
 
-- [20.hash运算](20.HashFunction.sol)
+- [20.Hash运算](20.HashFunction.sol)
 
 - [21.验证签名*](21.VerifySign.sol)
 
